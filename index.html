@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stranger</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- fonts -->
+  <link rel="stylesheet" href="./fontawesome-free-5.15.1-web/css/all.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="title">
+    <div>
+      <h1>Tell us about one stranger you still remember</h1>
+    </div>
+  </header>
+  <div class="master-div-style">
+    <!-- place -->
+    <div class="place">
+      <label for="place">Where did you meet?</label>
+      <div class="fields">  
+        <select name="place" id="place" class="dropdown">
+          <option value="park">park</option>
+          <option value="street">street</option>
+          <option value="market">market</option>
+          <option value="work">work</option>
+          <option value="other">other</option>
+        </select>
+      </div>
+      <!-- time -->
+      <div class="time">
+        <label for="time">When did it happen?</label>
+        <div class="fields">
+          <select name="time" id="time" class="dropdown">
+            <option value="today">today</option>
+            <option value="this-week">this week</option>
+            <option value="this-month">this month</option>
+            <option value="this-year">this year</option>
+          </select>
+        </div>
+      </div>
+      <!-- time of day -->
+      <div class="day">
+        <label for="day">At what time of day did it happen?</label>
+        <div class="fields">
+          <select name="day" id="day" class="dropdown">
+            <option value="morning">morning</option>
+            <option value="afternoon">afternoon</option>
+            <option value="evening">evening</option>
+          </select>
+        </div>
+      </div>
+      <!-- gender -->
+      <div class="gender">
+        <label for="gender">The stranger's gender?</label>
+        <div class="fields">
+          <select name="gender" id="gender" class="dropdown">
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+          </select>
+        </div>
+      </div>
+      <!-- age -->
+      <div class="age">
+        <label for="age">The stranger's age?</label>
+        <div class="fields">
+          <select name="age" id="age" class="dropdown">
+            <option value="0-19">0-19</option>
+            <option value="20+">20+</option>
+            <option value="35+">35+</option>
+            <option value="50+">50+</option>
+            <option value="65+">65+</option>
+            <option value="81+">81+</option>
+            <option value="99+">99+</option>
+          </select>
+        </div>
+        <!-- interaction -->
+        <div class="interaction">
+          <label for="interaction" class="interaction">Did you interact with the stranger?</label>
+          <div class="fields">
+            <input type="checkbox" name="interaction" value="eye-contact" checked> eye contact
+            <br>
+            <input type="checkbox" name="interaction" value="small-talk"> small talk
+            <br>
+            <input type="checkbox" name="interaction" value="looked at my something"> looked at my something
+            <br>
+            <input type="checkbox" name="interaction" value="i-was-not-noticed"> i wasn't noticed
+          </div>
+          </div>
+        <!-- stranger's mood -->
+        <div class="mood">
+          <label for="checkbox" class="mood">What was the stranger's mood?</label>
+          <div class="fields radio">
+            <input type="radio" name="mood" value="gloomy" checked> gloomy
+            <br>
+            <input type="radio" name="mood" value="puzzled"> puzzled
+            <br>
+            <input type="radio" name="mood" value="romantic"> romantic
+            <br>
+            <input type="radio" name="mood" value="cheerful"> cheerful
+            <br>
+            <input type="radio" name="mood" value="melancholy"> melancholy
+            <br>
+            <input type="radio" name="mood" value="average"> average
+            <br>
+            <input type="radio" name="mood" value="excited"> excited
+          </div>
+          </div>
+        <!-- feelings -->
+        <div class="feeling">
+          <label for="feelings" class="feelings">How did you feel after meeting the stranger?</label>
+          <div class="fields">
+            <input type="checkbox" name="feeling" value="enamored" checked> enamored
+            <br>
+            <input type="checkbox" name="feeling" value="happy"> happy
+            <br>
+            <input type="checkbox" name="feeling" value="indifferent"> indifferent
+            <br>
+            <input type="checkbox" name="feeling" value="liked"> liked
+          </div>
+        </div>
+        <!-- name -->
+        <div class="">
+        <form action="" class="one">
+          <label for="name">Name</label>
+          <div class="fields">
+            <input type="text" name="name" id="name" placeholder="Please enter your name" class="input-fields">
+          </div>
+        </form>
+        </div>
+        <!-- email -->
+        <div class="">
+        <form action="" class="two">
+          <label for="email">Email</label>
+          <div class="fields">
+            <input type="email" name="email" id="email" placeholder="Please enter your email adress" class="input-fields">
+          </div>
+        </form>
+        </div>
+        <!-- rate -->
+        <div class="rate">
+          <label for="rate">On a scale of 1-10, how good was the meeting?</label>
+          <div class="fields">
+            <input type="number" id="number" class="input-fields" placeholder="Please enter a number" min="1" max="10">
+          </div>
+        </div>
+        <!-- experience -->
+        <div class="experience">
+          <label for="experience">Describe your experience in a few words</label>
+          <div class="fields">
+            <textarea name="experience" id="experience" placeholder="Please make us smile" class="textarea"></textarea>
+          </div>
+          </div>
+          <!-- feedback -->
+          <div class="feedback">
+            <label for="feedback">Did you enjoy this quiz?</label>
+            <div class="fields">
+              <select name="feedback" id="feedback" class="dropdown">
+                <option value="yes">yes</option>
+                <option value="si">sí</option>
+                <option value="да">да</option>
+                <option value="ui">oui</option>
+                <option value="ja">ja</option>
+              </select>
+            </div>
+          </div>
+          <!-- submit -->
+          <button type="submit" class="btn">submit</button>
+          <!-- footer -->
+          <br>
+          <p class="footer">&copy;2021 <span>Stranger Quiz</span> all rights reserved</p> 
+        </div>
+      </body>
+      </html>
